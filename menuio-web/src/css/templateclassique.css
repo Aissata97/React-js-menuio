@@ -1,0 +1,64 @@
+.categories-scroll-menu{
+    background-color: #FFFFFF;
+    overflow: auto;
+    white-space: nowrap;
+    border: 1px solid black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.categories-scroll-menu p{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.categories-scroll-menu p:hover{
+    background-color: #777;
+}
+
+/** Produits **/
+
+.produits div{
+    display: flex;
+    flex-direction: row;
+}
+
+.produits div p:nth-child(1){
+    font-size: small;
+    width: 55%;
+}
+
+.produits div p:nth-child(2){
+    font-size: small;
+    width: 35%;
+}
+.produits button{
+    height: 10%;
+    font-size: small;
+    margin-right: 1%;
+}
+
+.produits h2{
+    font-size: large;
+}
+.tc-main-div{
+    background: #DDF0DF;
+    height: 80%;
+}
+
+.tc-main-div h1{
+    font-size: large;
+}
+
+.tc-main-principal{
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+/****************** Header Menu ************/
+/*.header-menu{
+    background-color: #41B562 ;
+}*/
+

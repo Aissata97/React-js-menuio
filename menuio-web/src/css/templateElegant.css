@@ -1,0 +1,158 @@
+.categories-scroll-menu{
+    background-color: #FFFFFF;
+    overflow: auto;
+    white-space: nowrap;
+    border: 1px solid black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.categories-scroll-menu p{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.categories-scroll-menu p:hover{
+    background-color: #777;
+}
+.te-items{
+    overflow-y: scroll;
+}
+
+/*************  Produits   ************/
+/*.te-all-produits{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.te-main-principal{
+    overflow: auto;
+    height: auto;
+}
+.te-produits{
+    display: -webkit-inline-box;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 100%;
+    background-color: #E5E5E5;
+}
+.te-produits div{
+    margin-left: 30%;
+    height: 200px;
+    width: 50%;
+}
+.te-produits img{
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    max-height: 250px;
+}
+.te-produits div p:nth-child(2){
+    margin-top: 150px;
+}
+.te-produits button{
+    background-color: #41B562;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    margin-right: auto;
+    margin-top: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .te-produits button{
+        margin-right: auto;
+    }
+    .te-produits p{
+        font-size: small;
+    }
+    .te-produits div{
+        margin-left: 5%;
+        height: 80px;
+        width: 50%;
+    }
+    .te-produits img{
+        width: 120px;
+    }
+
+    .te-produits div p:nth-child(2){
+        margin-top: 80px;
+    }
+
+}*/
+.te-all-produits{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.te-produits{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    max-width: 100%;
+    background-color: #E5E5E5;
+    margin-bottom: 2%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.te-produits button{
+    background-color: #41B562;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.te-produits img{
+    max-width: 100%;
+    width: 20%;
+    height: 20%;
+}
+
+.te-produits div{
+    margin-left: 30%;
+    width: 50%;
+}
+
+.te-produits div p{
+    font-size: large;
+}
+
+.te-produits div p:nth-child(1){
+    margin-bottom: 30%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .te-produits button{
+        height: 15%;
+    }
+
+    .te-produits div{
+        margin-left: 20%;
+        width: 50%;
+
+    }
+
+    .te-produits div p {
+        font-size: small;
+    }
+
+}
+
+
+

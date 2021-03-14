@@ -1,0 +1,9 @@
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table+div button{
+    margin-left: 5%;
+}

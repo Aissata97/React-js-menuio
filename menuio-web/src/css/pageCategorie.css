@@ -1,0 +1,23 @@
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btnAdd{
+    font-size: 70px;
+    outline: none;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    margin-left: 85%;
+    font-weight: 400;
+    color: rgb(131, 236, 27);
+}
+
+/****** page produit *****/
+img {
+    width: 50px;
+    height: auto;
+}

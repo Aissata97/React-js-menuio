@@ -1,0 +1,21 @@
+/*.logoHeader {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.logoHeader{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 2%;
+}
+
+.logoHeader img{
+    width: 250px;
+}
+
+
+#dropdown-basic {
+    margin-left: 1000%;
+    margin-top: 50%;
+}
