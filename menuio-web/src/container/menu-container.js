@@ -30,12 +30,12 @@ class Menu extends Component {
     }
 
     componentDidMount () {
-        //const { match: { params } } = this.props
+        const { match: { params } } = this.props
         Promise.all([
-            fetch(proxyurl + baseUrl + '/categoriesByResto/' + this.state.idRestaurant),
-            fetch(proxyurl + baseUrl + '/produits-order-by-cat/' + this.state.idRestaurant),
-            fetch(proxyurl + baseUrl + '/infostylemenu/' + this.state.idRestaurant),
-            fetch(proxyurl + baseUrl + '/restaurant-by-id/' + this.state.idRestaurant)
+            fetch(proxyurl + baseUrl + '/categoriesByResto/' + params.idResto),
+            fetch(proxyurl + baseUrl + '/produits-order-by-cat/' + params.idResto),
+            fetch(proxyurl + baseUrl + '/infostylemenu/' + params.idResto),
+            fetch(proxyurl + baseUrl + '/restaurant-by-id/' + params.idResto)
 
         ])
             .then(([response1, response2, response3, response4]) => Promise.all([response1.json(), response2.json(), response3.json(), response4.json()]))
