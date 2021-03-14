@@ -38,7 +38,7 @@ class Acceuil extends Component {
                 </div>
 
                 <div className="text-center">
-                    <QRCode value={'https://menuio-web.herokuapp.com/menu=' + this.state.idResto} />
+                    <QRCode value={'https://menuioweb.herokuapp.com/menu=' + this.state.idResto} />
                 </div>
             </div>
         )
