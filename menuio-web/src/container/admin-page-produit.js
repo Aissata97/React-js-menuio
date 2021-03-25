@@ -116,6 +116,7 @@ class PageProduitContainer extends Component {
         const requestOptionsAddProduit = {
             method: 'POST',
             headers: {
+                'Access-Control-Allow-Origin': '*',
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
             },
@@ -130,6 +131,11 @@ class PageProduitContainer extends Component {
 
             const requestOptionsUploadImage = {
                 method: 'POST',
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    /*'Content-Type': 'multipart/form-data; boundary=something'*/
+                    'Content-Type': 'image/jpeg; charset=utf-8'
+                },
                 body: formData
             }
 
@@ -140,8 +146,10 @@ class PageProduitContainer extends Component {
                     fetch(proxyurl + baseUrl + '/ajout/produit/' + this.state.idResto, {
                         method: 'POST',
                         headers: {
+                            'Access-Control-Allow-Origin': '*',
                             Accept: 'application/json',
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            
                         },
                         body: JSON.stringify({ nom: valuesAddForm.nom, description: valuesAddForm.description, prix: Number(valuesAddForm.prix), idCategorie: Number(valuesAddForm.idCategorie), idMenu: Number(idMenu), url_image: data })
                     }
