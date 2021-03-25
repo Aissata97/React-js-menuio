@@ -134,7 +134,7 @@ class PageProduitContainer extends Component {
                 headers: {
                     'Access-Control-Allow-Origin': '*',
                     /*'Content-Type': 'multipart/form-data; boundary=something'*/
-                    'Content-Type': 'image/jpeg; charset=utf-8'
+                    'Content-Type': 'multipart/form-data'
                 },
                 body: formData
             }
