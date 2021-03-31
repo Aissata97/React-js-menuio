@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect, Link } from 'react-router-dom'
 import InputComponent from '../component/input-component'
+import Loading from '../component/loading'
 import '../css/inscription.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 const baseUrl = 'https://menuio.herokuapp.com'
@@ -14,7 +15,8 @@ class ConnexionContainer extends Component {
             valuesForm: {},
             login: false,
             error: '',
-            isRestoExists: null
+            isRestoExists: null,
+            isLoading : true
         }
 
         this.handleChange = this.handleChange.bind(this)

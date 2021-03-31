@@ -133,6 +133,8 @@ class PageProduitContainer extends Component {
                 method: 'POST',
                 headers: {
                     'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods' : 'PUT, GET, POST, DELETE',
+                    'Access-Control-Allow-Headers' : 'Origin, X-Requested-With, Content-Type, Accept',
                     'Content-Type': 'multipart/form-data'
                 },
                 body: formData
