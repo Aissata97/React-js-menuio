@@ -4,7 +4,7 @@ import InputComponent from '../component/input-component'
 import Loading from '../component/loading'
 import '../css/inscription.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-const baseUrl = 'http://menuio.herokuapp.com'
+const baseUrl = 'https://menuio.herokuapp.com'
 //const proxyurl = 'https://cors-anywhere.herokuapp.com/'
 const proxyurl = ''
 
