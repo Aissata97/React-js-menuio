@@ -1,10 +1,13 @@
 import React from 'react'
-import ReactLoading from "react-loading"
+import ReactLoading from 'react-loading'
+import '../css/loading.css'
 
 const Loading = () => (
-    <div className="loading">
+    <div className='loading'>
+        <p>Veuillez patienter...</p>
         <ReactLoading
-            type="balls"
+            type = 'spin'
+            color = '#00000'
         />
     </div>
 )

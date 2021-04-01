@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    border: 1px solid black;
+    background-color: #41B562 ;
 }
 .header-menu img+img{
     width: 50px;
@@ -17,11 +19,11 @@
     margin-left: 2%;
 }
 
-.header-menu{
+/*.header-menu{
     border: 1px solid black;
     max-width: 100%;
     background-color: #41B562 ;
-}
+}*/
 
 /*.header-menu img+img{
     width: 300px;
@@ -30,4 +32,3 @@
 }
 
 */
-

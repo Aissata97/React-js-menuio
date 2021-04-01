@@ -4,7 +4,7 @@ import InputComponent from '../component/input-component'
 import Loading from '../component/loading'
 import '../css/inscription.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-const baseUrl = 'https://menuio.herokuapp.com'
+const baseUrl = 'http://menuio.herokuapp.com'
 //const proxyurl = 'https://cors-anywhere.herokuapp.com/'
 const proxyurl = ''
 
@@ -16,7 +16,7 @@ class ConnexionContainer extends Component {
             login: false,
             error: '',
             isRestoExists: null,
-            isLoading : true
+            isLoading : false
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -31,6 +31,9 @@ class ConnexionContainer extends Component {
 
     handleSubmit (event) {
         event.preventDefault()
+        this.setState({
+            isLoading : true
+        })
         const requestOptions = {
             method: 'POST',
             headers: {
@@ -41,6 +44,7 @@ class ConnexionContainer extends Component {
         }
 
         fetch(proxyurl + baseUrl + '/connexion', requestOptions)
+        
             .then((response) => {
                 if (response.status < 200 || response.status >= 300) {
                     this.setState({ error: 'Les informations entrées sont incorrectes !!!' })
@@ -62,7 +66,10 @@ class ConnexionContainer extends Component {
                         return response2.json()
                     })
                     .then((result2) => {
-                        this.setState({ isRestoExists: result2 })
+                        this.setState({ 
+                            isRestoExists: result2,
+                            isLoading : false 
+                        })
                     })
             })
     }
@@ -72,6 +79,8 @@ class ConnexionContainer extends Component {
             return <Redirect to='/acceuil' />
         } else if (this.state.login && this.state.isRestoExists === false) {
             return <Redirect to={'/inscription/' + localStorage.getItem('idUser')} />
+        }else if (this.state.isLoading){
+            return <Loading/>
         }
         return (
             <div>
@@ -109,7 +118,6 @@ class ConnexionContainer extends Component {
                         <span>{this.state.error}</span>
 
                     </form>
-
                 </div>
 
             </div>
