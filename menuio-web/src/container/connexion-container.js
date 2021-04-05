@@ -61,17 +61,23 @@ class ConnexionContainer extends Component {
                 localStorage.setItem('idUser', result.id)
                 this.setState({ login: true })
                 
-                /*fetch(proxyurl + baseUrl + '/cheick-restaurant/' + result.id)
+                fetch(proxyurl + baseUrl + '/cheick-restaurant/' + result.id)
                     .then((response2) => {
+                        if (response2.status < 200 || response2.status >= 300){
+                            this.setState({
+                                error : 'Cet utilisateur n\'a pas de restaurant !',
+                                isRestoExists : false
+                            })
+                        }
                         return response2.json()
                     })
                     .then((result2) => {
+                        console.log(result2)
                         this.setState({ 
                             isRestoExists: result2,
                             isLoading : false  
                         })
-
-                    })*/
+                    })
             })
     }
 
