@@ -50,8 +50,6 @@ class ConnexionContainer extends Component {
                         error: 'Les informations entrées sont incorrectes !!!',
                         login : false 
                     })
-                    //console.log(response)
-                    //throw new Error(response.statusText)
                 }
                 return response.json()
             })
@@ -88,6 +86,9 @@ class ConnexionContainer extends Component {
             return <Redirect to='/acceuil' />
         } else if (this.state.login && this.state.isRestoExists === false) {
             return <Redirect to={'/inscription/' + localStorage.getItem('idUser')} />
+        }
+        if (this.state.isLoading){
+            return <Loading/>
         }
 
         return (
