@@ -48,26 +48,27 @@ class ConnexionContainer extends Component {
                 if (response.status < 200 || response.status >= 300) {
                     this.setState({ 
                         error: 'Les informations entrées sont incorrectes !!!',
-                        login : false 
+                        login: false
                     })
                 }
                 return response.json()
             })
             .then((result) => {
-                localStorage.setItem('login', JSON.stringify({
-                    login: true,
-                    token: result.accessToken
-                }))
-                localStorage.setItem('prenom', result.prenom)
-                localStorage.setItem('idUser', result.id)
-                this.setState({ login: true })
-                
-                fetch(proxyurl + baseUrl + '/cheick-restaurant/' + result.id)
+                if (result.accessToken !== undefined){
+                    this.setState({ login: true })
+                    localStorage.setItem('login', JSON.stringify({
+                        login: true,
+                        token: result.accessToken
+                    }))
+                    localStorage.setItem('prenom', result.prenom)
+                    localStorage.setItem('idUser', result.id)
+
+                    ///Si l'utilisateur est bien inscrit mais qu'il pas enregistrer son restaurant
+                    fetch(proxyurl + baseUrl + '/cheick-restaurant/' + result.id)
                     .then((response2) => {
-                        if (response2.status !== 200){
+                        if (response2.status < 200 || response2.status >= 300){
                             this.setState({
-                                isRestoExists : false,
-                                login : false
+                                isRestoExists : false
                             })
                         }
                         return response2.json()
@@ -75,21 +76,25 @@ class ConnexionContainer extends Component {
                     .then((result2) => {
                         this.setState({ 
                             isRestoExists: result2,
-                            isLoading : false  
+                            isLoading : false
                         })
                     })
+                }
+                
             })
     }
 
     render () {
         if (this.state.login && this.state.isRestoExists) {
             return <Redirect to='/acceuil' />
-        } else if (this.state.login && this.state.isRestoExists === false) {
+        } else if ( (this.state.login) && (this.state.isRestoExists === false)) {
             return <Redirect to={'/inscription/' + localStorage.getItem('idUser')} />
+        }else if (this.state.login === false && this.state.isRestoExists === false){
+            return <Redirect to='/inscription' />
         }
-        if (this.state.isLoading){
+        /*if (this.state.isLoading){
             return <Loading/>
-        }
+        }*/
 
         return (
             <div>
