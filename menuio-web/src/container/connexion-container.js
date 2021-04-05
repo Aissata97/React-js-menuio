@@ -46,8 +46,11 @@ class ConnexionContainer extends Component {
         fetch(proxyurl + baseUrl + '/connexion', requestOptions)
             .then((response) => {
                 if (response.status < 200 || response.status >= 300) {
-                    this.setState({ error: 'Les informations entrées sont incorrectes !!!' })
-                    console.log(response)
+                    this.setState({ 
+                        error: 'Les informations entrées sont incorrectes !!!',
+                        login : false 
+                    })
+                    //console.log(response)
                     //throw new Error(response.statusText)
                 }
                 return response.json()
@@ -63,16 +66,15 @@ class ConnexionContainer extends Component {
                 
                 fetch(proxyurl + baseUrl + '/cheick-restaurant/' + result.id)
                     .then((response2) => {
-                        if (response2.status < 200 || response2.status >= 300){
+                        if (response2.status !== 200){
                             this.setState({
-                                error : 'Cet utilisateur n\'a pas de restaurant !',
-                                isRestoExists : false
+                                isRestoExists : false,
+                                login : false
                             })
                         }
                         return response2.json()
                     })
                     .then((result2) => {
-                        console.log(result2)
                         this.setState({ 
                             isRestoExists: result2,
                             isLoading : false  
@@ -87,6 +89,7 @@ class ConnexionContainer extends Component {
         } else if (this.state.login && this.state.isRestoExists === false) {
             return <Redirect to={'/inscription/' + localStorage.getItem('idUser')} />
         }
+
         return (
             <div>
                 <div className='header'>
