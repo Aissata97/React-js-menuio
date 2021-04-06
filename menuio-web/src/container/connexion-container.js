@@ -48,7 +48,8 @@ class ConnexionContainer extends Component {
                 if (response.status < 200 || response.status >= 300) {
                     this.setState({ 
                         error: 'Les informations entrées sont incorrectes !!!',
-                        login: false
+                        login: false,
+                        isLoading: false
                     })
                 }
                 return response.json()
@@ -63,14 +64,9 @@ class ConnexionContainer extends Component {
                     localStorage.setItem('prenom', result.prenom)
                     localStorage.setItem('idUser', result.id)
 
-                    ///Si l'utilisateur est bien inscrit mais qu'il pas enregistrer son restaurant
+                    ///Si l'utilisateur est inscrit mais qu'il pas enregistrer son restaurant
                     fetch(proxyurl + baseUrl + '/cheick-restaurant/' + result.id)
                     .then((response2) => {
-                        if (response2.status < 200 || response2.status >= 300){
-                            this.setState({
-                                isRestoExists : false
-                            })
-                        }
                         return response2.json()
                     })
                     .then((result2) => {
@@ -91,10 +87,9 @@ class ConnexionContainer extends Component {
             return <Redirect to={'/inscription/' + localStorage.getItem('idUser')} />
         }else if (this.state.login === false && this.state.isRestoExists === false){
             return <Redirect to='/inscription' />
-        }
-        /*if (this.state.isLoading){
+        }else if (this.state.isLoading){
             return <Loading/>
-        }*/
+        }
 
         return (
             <div>
