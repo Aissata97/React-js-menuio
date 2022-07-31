@@ -3,10 +3,15 @@
 }*/
 
 
-.premier-ecran {
+.premier-ecran,
+.deuxieme-ecran {
     justify-content: center;
     height: 800px;
-    background-color: #DFF2FF;
+    /*background-color: #DFF2FF;*/
+}
+
+.premier-ecran {
+    background-color: #DFF2FF
 }
 
 .second-ecran {
@@ -80,7 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 70%;
 }
 
 /** Les liens dans le navbar */
@@ -111,6 +116,7 @@ button {
     padding: 3%;
     border: none;
     width: 40%;
+    margin-right: 2%;
 }
 
 .navbar button a,
@@ -137,3 +143,41 @@ h1 b {
 
 
 /**************** DEUXIEME ECRAN ******************/
+
+.deuxieme-ecran h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/**** Conteneur deuxieme ecran ****/
+.deuxieme-ecran>div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 15%;
+    height: 70%;
+}
+
+.deuxieme-ecran img {
+    opacity: 1;
+    width: 35%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.paragraph-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    /*width: 35%;
+    height: 70%;*/
+}

@@ -14,8 +14,9 @@ class AccueilPrincipal extends Component {
                             <img className='btn' src='https://aissatabucket.s3.amazonaws.com/menui-logo.png' alt='Logo App' />
                         </div>
                          <div>
-                            <a href='#propos'>À propos </a>
+                            <a href='#propos'>Aide </a>
                             <a href='#connexion'>Connexion </a>
+                            <a href='#connexion'>Contact </a>
                             <button><a href='#creer-qr-code'>Creer un menu</a></button>
                         </div>
                     </div>
@@ -27,8 +28,8 @@ class AccueilPrincipal extends Component {
                                 <p>Adieu les menus classiques !</p>
                             </h1>
                             <div>
-                                <button><a href='test'>Exemple de menu</a></button>
-                                <button><a href='#creer-qr-code'>Creer un QR Code</a></button>
+                                <button><a href='test'>Demo</a></button>
+                                <button><a href='#creer-qr-code'>Creer un menu</a></button>
                             </div>
                         </div>
 
@@ -40,11 +41,11 @@ class AccueilPrincipal extends Component {
                 </div>
 
                 {/* Deuxième écran */}
-                <div className='second-ecran'>
+                <div className='deuxieme-ecran'>
                     <h2>Fonctionnement de Menuio</h2>
                     <div>
                         <img src='https://aissatabucket.s3.amazonaws.com/moderne.png' alt='template moderne'/>
-                        <div>
+                        <div className='paragraph-info'>
                             <p>Comment fonctionne Menuio ?</p>
                             <p>Le site est concu spécialement pour les propriétaires de restaurant et bar afin de creer un menu numérisé et personnalisé</p>
                             <p>Vous devez vous d'abord vous inscrire et inscrire votre restaurant pour accéder au site et ses fonctionnalités </p>
