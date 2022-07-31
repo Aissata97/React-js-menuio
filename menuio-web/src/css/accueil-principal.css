@@ -50,11 +50,11 @@
 }
 
 /* Rotation des images */
-.premier-ecran-droite img:nth-child(1) {
+.premier-ecran-droite img:first-child {
     transform: rotate(-10deg) translateX(10px);
 }
 
-.premier-ecran-droite img:nth-child(2) {
+.premier-ecran-droite img:last-child {
     transform: rotate(5deg);
 }
 
@@ -68,37 +68,42 @@
     margin-right: 17%;
 }
 
+/*** LOGO ****/
 .navbar img {
     width: 50%;
     height: auto;
     margin-left: 0%;
 }
 
-.navbar div:nth-child(2) {
+/** Conteneur des 3 liens dans le navbar**/
+.navbar div:last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
 }
 
-.navbar div:nth-child(2) a {
+/** Les liens dans le navbar */
+.navbar div:last-child a {
     color: black;
 }
 
-.navbar div:nth-child(2) a:hover {
+/** Hover Les liens dans le navbar */
+.navbar div:last-child a:hover {
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 5px;
     text-decoration-color: aqua;
 }
 
-.navbar div:nth-child(2) button a,
+/*** les Bouton creer un menu**/
+.navbar div:last-child button a,
 .premier-ecran-gauche button:last-child a {
     color: #FFFF;
 }
 
-.navbar button,
-.premier-ecran-gauche button {
+/* Les 3 boutons de l'ecran 1 */
+button {
     /*background-color: aqua;*/
     border-radius: 30px;
     text-decoration: none;
@@ -113,11 +118,22 @@
     text-decoration: none;
 }
 
+/* Bouton Creer un menu */
 .premier-ecran-gauche button:last-child,
 .navbar button {
     background-color: aqua;
 }
 
+/* Bouton exemple de menu */
 .premier-ecran-gauche button:first-child {
     background-color: #a6c7de;
 }
+
+/** Lien ou texte dans Bouton Exemple de menu  et titre h1**/
+.premier-ecran-gauche button:first-child a,
+h1 b {
+    color: aqua;
+}
+
+
+/**************** DEUXIEME ECRAN ******************/
