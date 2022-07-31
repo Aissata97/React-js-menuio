@@ -13,13 +13,14 @@ import Menu from '../container/menu-container'
 import PageCategorieContainer from '../container/admin-page-categorie'
 import PageProduitContainer from '../container/admin-page-produit'
 import PanierContainer from '../container/page-panier-container'
+import AccueilPrincipal from './accueil-principal'
 /* */
 // import TemplateClassicContainer from '../component/template-classique-component'
 
 const App = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path='/' component={InscriptionFormContainer} />
+            <Route exact path='/' component={AccueilPrincipal} />
             <Route exact path='/inscription' component={InscriptionFormContainer} />
             <Route path='/inscription/:id' component={InscriptionRestoFormContainer} />
             <Route path='/connexion' component={ConnexionContainer} />
