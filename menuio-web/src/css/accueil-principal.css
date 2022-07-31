@@ -1,8 +1,123 @@
-body,
-html,
-.main {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+
+.premier-ecran {
+    justify-content: center;
+    height: 800px;
     background-color: #DFF2FF;
+}
+
+.second-ecran {
+    height: 800px;
+    background-color: #FFFF;
+}
+
+.body-page-premier-ecran {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 8%;
+}
+
+.premier-ecran-gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.premier-ecran-droite {
+    width: 50%;
+}
+
+.premier-ecran-gauche h1 {
+    font-size: xx-large;
+}
+
+
+
+.premier-ecran-droite img {
+    opacity: 1;
+    width: 45%;
+    height: auto;
+    transition: .5s ease;
+    border-radius: 20px;
+}
+
+/* Rotation des images */
+.premier-ecran-droite img:nth-child(1) {
+    transform: rotate(-10deg) translateX(10px);
+}
+
+.premier-ecran-droite img:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 15%;
+    /****/
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+.navbar img {
+    width: 50%;
+    height: auto;
+    margin-left: 0%;
+}
+
+.navbar div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar div:nth-child(2) a {
+    color: black;
+}
+
+.navbar div:nth-child(2) a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: aqua;
+}
+
+.navbar div:nth-child(2) button a,
+.premier-ecran-gauche button:last-child a {
+    color: #FFFF;
+}
+
+.navbar button,
+.premier-ecran-gauche button {
+    /*background-color: aqua;*/
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3%;
+    border: none;
+    width: 40%;
+}
+
+.navbar button a,
+.premier-ecran-gauche button a {
+    text-decoration: none;
+}
+
+.premier-ecran-gauche button:last-child,
+.navbar button {
+    background-color: aqua;
+}
+
+.premier-ecran-gauche button:first-child {
+    background-color: #a6c7de;
 }
