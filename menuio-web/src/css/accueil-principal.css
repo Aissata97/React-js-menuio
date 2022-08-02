@@ -1,6 +1,6 @@
-/*html {
+html {
     scroll-behavior: smooth;
-}*/
+}
 
 
 .premier-ecran,
@@ -15,7 +15,7 @@
 }
 
 .second-ecran {
-    height: 800px;
+    height: 900px;
     background-color: #FFFF;
 }
 
@@ -48,7 +48,7 @@
 
 .premier-ecran-droite img {
     opacity: 1;
-    width: 45%;
+    width: 50%;
     height: auto;
     transition: .5s ease;
     border-radius: 20px;

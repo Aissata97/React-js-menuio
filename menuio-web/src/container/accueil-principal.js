@@ -14,10 +14,10 @@ class AccueilPrincipal extends Component {
                             <img className='btn' src='https://aissatabucket.s3.amazonaws.com/menui-logo.png' alt='Logo App' />
                         </div>
                          <div>
-                            <a href='#propos'>Aide </a>
-                            <a href='#connexion'>Connexion </a>
-                            <a href='#connexion'>Contact </a>
-                            <button><a href='#creer-qr-code'>Creer un menu</a></button>
+                            <a href='#aide'>Aide </a>
+                            <a href='/connexion' id='connexionAdmin'>Connexion </a>
+                            <a href='#contact'>Contact </a>
+                            <button><a href='/inscription'>Creer un menu</a></button>
                         </div>
                     </div>
                         {/* Centre de la page */}
@@ -29,7 +29,7 @@ class AccueilPrincipal extends Component {
                             </h1>
                             <div>
                                 <button><a href='test'>Demo</a></button>
-                                <button><a href='#creer-qr-code'>Creer un menu</a></button>
+                                <button><a href='/inscription'>Creer un menu</a></button>
                             </div>
                         </div>
 
@@ -41,19 +41,21 @@ class AccueilPrincipal extends Component {
                 </div>
 
                 {/* Deuxième écran */}
-                <div className='deuxieme-ecran'>
+                <div className='deuxieme-ecran' id='aide'>
                     <h2>Fonctionnement de Menuio</h2>
                     <div>
                         <img src='https://aissatabucket.s3.amazonaws.com/moderne.png' alt='template moderne'/>
                         <div className='paragraph-info'>
                             <p>Comment fonctionne Menuio ?</p>
                             <p>Le site est concu spécialement pour les propriétaires de restaurant et bar afin de creer un menu numérisé et personnalisé</p>
-                            <p>Vous devez vous d'abord vous inscrire et inscrire votre restaurant pour accéder au site et ses fonctionnalités </p>
+                            <p>Vous devez d'abord vous inscrire et inscrire votre restaurant pour accéder au site et ses fonctionnalités </p>
                             <p>Une fois inscris sur le site, vous pourrez choisir une template, et personnaliser votre menu à votre gout </p>
                             <p>Et enfin générer un QR Code, pour permettre à vos clients d'accéder à votre menu depuis leur telephone ou tablette</p>
                         </div>
                     </div>
                 </div>
+
+                {/* Troisième écran */}
                         
             </div>
     )}
