@@ -1,9 +1,10 @@
 import React from 'react'
+import '../css/header-no-connect.css'
 
 const HeaderNoConnect = () => (
-    <div className='navbar'>
+    <div className='navbar-no-connect'>
         <div>
-            <a href='/'><img className='btnNavbar' src='https://aissatabucket.s3.amazonaws.com/menui-logo.png' alt='Logo App' /></a>
+            <a href='/'><img className='btn-navbar' src='https://aissatabucket.s3.amazonaws.com/menui-logo.png' alt='Logo App' /></a>
         </div>
         <div>
             <a href='/#aide'>Aide </a>

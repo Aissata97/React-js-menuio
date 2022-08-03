@@ -8,7 +8,7 @@ class AccueilPrincipal extends Component {
 
     render () {
         return (
-            <div className='main'>
+            <div className='main-page-acceuil-principal'>
 
                 <div className='premier-ecran'>
                         {/*Navebar */}

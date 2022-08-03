@@ -6,7 +6,7 @@ html {
 .premier-ecran,
 .deuxieme-ecran {
     justify-content: center;
-    height: 800px;
+    height: 850px;
     /*background-color: #DFF2FF;*/
 }
 
@@ -14,10 +14,6 @@ html {
     background-color: #DFF2FF;
 }
 
-.second-ecran {
-    height: 900px;
-    background-color: #FFFF;
-}
 
 .body-page-premier-ecran {
     display: flex;
@@ -63,53 +59,15 @@ html {
     transform: rotate(5deg);
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 15%;
-    /****/
-    margin-left: 17%;
-    margin-right: 17%;
-}
 
-/*** LOGO ****/
-.navbar img {
-    width: 100px;
-    height: auto;
-    margin-left: 0%;
-}
 
-/** Conteneur des 3 liens dans le navbar**/
-.navbar div:last-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-}
-
-/** Les liens dans le navbar */
-.navbar div:last-child a {
-    color: black;
-}
-
-/** Hover Les liens dans le navbar */
-.navbar div:last-child a:hover {
-    color: black;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    text-decoration-color: aqua;
-}
-
-/*** les Bouton creer un menu**/
-.navbar div:last-child button a,
+/*** les Bouton creer un menu : couleur du text **/
 .premier-ecran-gauche button:last-child a {
     color: #FFFF;
 }
 
-/* Les 3 boutons de l'ecran 1 */
-.premier-ecran button {
-    /*background-color: aqua;*/
+/* Les 2 boutons de l'ecran 1 */
+.premier-ecran-gauche button {
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
@@ -120,14 +78,12 @@ html {
     margin-right: 10px;
 }
 
-.navbar button a,
 .premier-ecran-gauche button a {
     text-decoration: none;
 }
 
 /* Bouton Creer un menu */
-.premier-ecran-gauche button:last-child,
-.navbar button {
+.premier-ecran-gauche button:last-child {
     background-color: aqua;
 }
 

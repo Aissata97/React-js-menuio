@@ -72,21 +72,21 @@ class ChoixTemplateContainer extends Component {
                 <div className='main-div'>
                     <div className='container'>
                         <h3>Classic</h3>
-                        <img src='https://aissatabucket.s3.amazonaws.com/classic.png' alt='image template classic' className='image' />
+                        <img src='https://aissatabucket.s3.amazonaws.com/classic.png' alt='template classic' className='image' />
                         <div className='middle'>
                             <button className='btnChoix btn btn-primary' type='button' onClick={this.handleClickClassic}>Choisir ce template</button>
                         </div>
                     </div>
                     <div className='container'>
                         <h3>Elegant</h3>
-                        <img src='https://aissatabucket.s3.amazonaws.com/elegant.png' alt='image template elegant' className='image' />
+                        <img src='https://aissatabucket.s3.amazonaws.com/elegant.png' alt='template elegant' className='image' />
                         <div className='middle'>
                             <button className='btnChoix btn btn-primary' type='button' onClick={this.handleClickElegant}>Choisir ce template</button>
                         </div>
                     </div>
                     <div className='container'>
                         <h3>Moderne</h3>
-                        <img src='https://aissatabucket.s3.amazonaws.com/moderne.png' alt='image template moderne' className='image' />
+                        <img src='https://aissatabucket.s3.amazonaws.com/moderne.png' alt='template moderne' className='image' />
                         <div className='middle'>
                             <button className='btnChoix btn btn-primary' type='button' onClick={this.handleClickModerne}>Choisir ce template</button>
                         </div>

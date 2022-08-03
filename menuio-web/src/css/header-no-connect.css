@@ -1,0 +1,55 @@
+/* Navbar  du header avant la connexion au page admin */
+.navbar-no-connect {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 15%;
+    margin-left: 17%;
+    margin-right: 17%;
+    vertical-align: middle;
+}
+
+/*** LOGO ****/
+.navbar-no-connect img {
+    width: 200px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/** Conteneur des 3 liens dans le navbar**/
+.navbar-no-connect div:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+/** Les liens dans le navbar */
+.navbar-no-connect div:last-child a {
+    color: black;
+}
+
+/** Hover Les liens dans le navbar */
+.navbar-no-connect div:last-child a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: aqua;
+}
+
+
+/** Bouton creer un menu : couleur du text **/
+.navbar-no-connect div:last-child button a {
+    color: #FFFF;
+}
+
+/* Bouton Creer un menu  : couleur du bouton */
+.navbar-no-connect button {
+    background-color: aqua;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    width: 150px;
+}
