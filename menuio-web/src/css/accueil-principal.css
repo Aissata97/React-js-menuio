@@ -110,7 +110,8 @@ h1 b {
 }
 
 /**** Conteneur deuxieme ecran ****/
-.deuxieme-ecran>div {
+/**.deuxieme-ecran+div {*/
+.deuxieme-ecran-container {
     display: flex;
     flex-direction: row;
     margin-left: 20%;
@@ -118,7 +119,7 @@ h1 b {
     height: 70%;
 }
 
-.deuxieme-ecran img {
+.deuxieme-ecran-container img {
     opacity: 1;
     width: 35%;
     height: auto;
@@ -137,4 +138,75 @@ h1 b {
     margin-left: 15%;
     /*width: 35%;
     height: 70%;*/
+}
+
+
+/*************** Media Queries  **************************/
+@media screen and (max-width : 750px) {
+    .body-page-premier-ecran {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .premier-ecran-gauche {
+        width: 92%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+    .body-page-premier-ecran {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .premier-ecran-gauche button {
+        width: 45%;
+        margin-right: 3px;
+    }
+
+    .premier-ecran-droite {
+        margin-top: 30px;
+    }
+
+    .premier-ecran-droite {
+        width: 80%;
+    }
+
+    /******** Deuxième ecran *******/
+    .deuxieme-ecran {
+        margin-top: 10%;
+    }
+
+    .deuxieme-ecran-container {
+        flex-direction: column;
+    }
+
+    .deuxieme-ecran-container img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .paragraph-info {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+        font-size: 15px;
+        /* border: 2px solid black; */
+    }
+
+
+
+    /******************************/
+
+    .premier-ecran,
+    .main-page-contact {
+        max-height: 550px;
+    }
 }

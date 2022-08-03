@@ -36,7 +36,7 @@ class AccueilPrincipal extends Component {
                 {/* Deuxième écran */}
                 <div className='deuxieme-ecran' id='aide'>
                     <h2>Fonctionnement de Menuio</h2>
-                    <div>
+                    <div className='deuxieme-ecran-container'>
                         <img src='https://aissatabucket.s3.amazonaws.com/moderne.png' alt='template moderne'/>
                         <div className='paragraph-info'>
                             <p>Comment fonctionne Menuio ?</p>
