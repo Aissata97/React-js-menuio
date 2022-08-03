@@ -1,0 +1,94 @@
+.connexion-page-container,
+html {
+    background-color: #DFF2FF;
+    height: 100%;
+}
+
+.connexion-container,
+.inscription-container {
+    background-color: #FFFF;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.connexion-container {
+    width: 30%;
+    height: 50vh;
+    padding: 4%;
+}
+
+.div-input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-input {
+    border-radius: 10px;
+    height: 5vh;
+}
+
+.btn-connexion,
+.btn-inscription {
+    text-align: center;
+    margin-top: 2vh;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    padding: 3%;
+    border: none;
+    width: 40%;
+    margin-right: 2%;
+    background-color: aqua;
+    color: #FFFF;
+}
+
+.connexion-container h1,
+.inscription-container h1 {
+    font-size: 3vh;
+}
+
+/**** Inscription Container ******/
+
+.inscription-container {
+    height: 100vh;
+    width: 40%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+}
+
+/***************************************/
+
+
+/**** Tablette *****/
+@media screen and (max-width: 1280px) {
+
+    .connexion-container,
+    .inscription-container {
+        width: 50%;
+    }
+
+    /* .btn-connexion {
+        margin-top: 2%;
+    } */
+
+}
+
+
+@media screen and (max-width : 800px) {
+
+    .connexion-container,
+    .inscription-container {
+        width: 82%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    .connexion-container,
+    .inscription-container {
+        width: 95%;
+    }
+}

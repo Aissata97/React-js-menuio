@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Redirect, Link } from 'react-router-dom'
+import { Redirect} from 'react-router-dom'
 import InputComponent from '../component/input-component'
 import Loading from '../component/loading'
-import '../css/inscription.css'
+import HeaderNoConnect from '../component/header-no-connect'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import '../css/connexion-inscription.css'
 const baseUrl = 'https://menuio.herokuapp.com'
 //const proxyurl = 'https://cors-anywhere.herokuapp.com/'
 const proxyurl = ''
@@ -92,13 +93,10 @@ class ConnexionContainer extends Component {
         }
 
         return (
-            <div>
-                <div className='header'>
-                    <img src='https://aissatabucket.s3.amazonaws.com/menui-logo.png' alt='Logo de menuio' />
-                    <Link to='/'><button>Inscription</button></Link>
-                </div>
+            <div className='connexion-page-container'>
+                <HeaderNoConnect />
 
-                <div>
+                <div className='connexion-container'>
                     <div>
                         <h1>Connexion</h1>
                     </div>
@@ -109,7 +107,8 @@ class ConnexionContainer extends Component {
                             name='email'
                             type='text'
                             text='E-mail (votre e-mail personnel)'
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange}
                         />
                         <InputComponent
@@ -117,12 +116,13 @@ class ConnexionContainer extends Component {
                             name='passwords'
                             type='password'
                             text='Mot de passe '
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange}
                         />
 
                         <div className='text-center'>
-                            <input type='submit' value='Se connecter' />
+                            <input type='submit' value='Se connecter' className='btn-connexion'/>
                         </div>
                         <span>{this.state.error}</span>
 

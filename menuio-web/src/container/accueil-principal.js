@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import HeaderNoConnect from '../component/header-no-connect'
 import '../css/accueil-principal.css'
+import '../css/contact-page.css'
+import imageContact from'../images/photo-carte.jpeg'
 
 class AccueilPrincipal extends Component {
 
@@ -9,17 +12,7 @@ class AccueilPrincipal extends Component {
 
                 <div className='premier-ecran'>
                         {/*Navebar */}
-                    <div className='navbar'>
-                        <div>
-                            <img className='btn' src='https://aissatabucket.s3.amazonaws.com/menui-logo.png' alt='Logo App' />
-                        </div>
-                         <div>
-                            <a href='#aide'>Aide </a>
-                            <a href='/connexion' id='connexionAdmin'>Connexion </a>
-                            <a href='#contact'>Contact </a>
-                            <button><a href='/inscription'>Creer un menu</a></button>
-                        </div>
-                    </div>
+                        <HeaderNoConnect />
                         {/* Centre de la page */}
                     <div className='body-page-premier-ecran'>
                         <div className='premier-ecran-gauche'>
@@ -53,9 +46,39 @@ class AccueilPrincipal extends Component {
                             <p>Et enfin générer un QR Code, pour permettre à vos clients d'accéder à votre menu depuis leur telephone ou tablette</p>
                         </div>
                     </div>
-                </div>
+                </div> { /** Fin div deuxieme- ecran */}
+
 
                 {/* Troisième écran */}
+                <div className='main-page-contact' id='contact'>
+                    <div className='a-propos-container'>
+                        <h1>À propos</h1>
+                        <p>Le site a été crée uniquement dans le but de pratiquer les notions apprises en programmation.</p>
+                        <p>Les technologies utilisés sont : Spring boot, React Js, PostgreSql et Heroku .</p>
+                    </div>
+
+                    <h2>Notre équique</h2>
+
+                    <div className='div-equipe'>
+                        <div className='div-carte'>
+                            <div className='carte'>
+                                <img src={imageContact} alt='Aissata' className='imgCarte' />
+                                <div className="container-carte-info">
+                                    <h2>Aïssata Mama Ouattara</h2>
+                                    <p className='titre-post'>Développeuse web et mobile</p>
+                                    <p>Developpeuse web avec un penchant pour le backend et le developpement d'application mobile</p>
+                                    <p>aissata.ouattara@outlook.fr</p>
+                                    <p><button className='btn-contact'>Contact</button></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> {/** Fin div main-page-contact */}
+
+
+
                         
             </div>
     )}

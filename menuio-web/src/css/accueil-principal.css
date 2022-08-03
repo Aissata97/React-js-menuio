@@ -11,7 +11,7 @@ html {
 }
 
 .premier-ecran {
-    background-color: #DFF2FF
+    background-color: #DFF2FF;
 }
 
 .second-ecran {
@@ -75,7 +75,7 @@ html {
 
 /*** LOGO ****/
 .navbar img {
-    width: 50%;
+    width: 100px;
     height: auto;
     margin-left: 0%;
 }
@@ -108,15 +108,16 @@ html {
 }
 
 /* Les 3 boutons de l'ecran 1 */
-button {
+.premier-ecran button {
     /*background-color: aqua;*/
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
-    padding: 3%;
+    display: inline-block;
+    padding: 10px;
     border: none;
     width: 40%;
-    margin-right: 2%;
+    margin-right: 10px;
 }
 
 .navbar button a,

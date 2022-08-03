@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 import InputComponent from '../component/input-component'
 import HeaderNoConnect from '../component/header-no-connect'
-import '../css/inscription.css'
+//import '../css/inscription.css'
+import '../css/connexion-inscription.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 const baseUrl = 'https://menuio.herokuapp.com'
 //const proxyurl = 'https://cors-anywhere.herokuapp.com/'
@@ -142,9 +143,9 @@ class InscriptionFormContainer extends Component {
             return <Redirect to={'/inscription/' + id} />
         } */
         return (
-            <div>
+            <div className='inscription-page-container'>
                 <HeaderNoConnect />
-                <div>
+                <div className='inscription-container'>
                     <div>
                         <h1>Inscription : </h1>
                         <p>Étape 1 : Entrez vos informations personnelles</p>
@@ -161,7 +162,8 @@ class InscriptionFormContainer extends Component {
                             type='text'
                             text='Nom'
                             onChange={this.handleChange.bind(this, 'nom')}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             value={this.state.valuesForm.nom}
                         />
                         <span>{this.state.errors.nom}</span>
@@ -172,7 +174,8 @@ class InscriptionFormContainer extends Component {
                             type='text'
                             text='Prenom'
                             value={this.state.valuesForm.prenom}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange.bind(this, 'prenom')}
                         />
                         <span>{this.state.errors.prenom}</span>
@@ -183,7 +186,8 @@ class InscriptionFormContainer extends Component {
                             type='text'
                             text='E-mail'
                             value={this.state.valuesForm.email}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange.bind(this, 'email')}
                         />
                         <span>{this.state.errors.email}</span>
@@ -194,7 +198,8 @@ class InscriptionFormContainer extends Component {
                             type='tel'
                             text='Téléphone'
                             value={this.state.valuesForm.telephone}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange.bind(this, 'telephone')}
                         />
                         <span>{this.state.errors.telephone}</span>
@@ -205,7 +210,8 @@ class InscriptionFormContainer extends Component {
                             type='text'
                             text='Addresse'
                             value={this.state.valuesForm.addresse}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange.bind(this, 'addresse')}
                         />
 
@@ -215,7 +221,8 @@ class InscriptionFormContainer extends Component {
                             type='password'
                             text='Mot de passe'
                             value={this.state.valuesForm.passwords}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange.bind(this, 'passwords')}
                         />
                         <span>{this.state.errors.passwords}</span>
@@ -226,12 +233,15 @@ class InscriptionFormContainer extends Component {
                             type='password'
                             text='Mot de passe de confirmation'
                             value={this.state.valuesForm.password2}
-                            classNameDiv='form-group'
+                            classNameDiv='div-input-form'
+                            classNameInput='div-input'
                             onChange={this.handleChange.bind(this, 'password2')}
                         />
                         <span>{this.state.errors.password2}</span>
 
-                        <input type='submit' value='envoyer' />
+                        <div className='text-center'>
+                            <input type='submit' value='envoyer' className='btn-inscription'/>
+                        </div>
 
                     </form>
                 </div>

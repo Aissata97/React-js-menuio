@@ -1,4 +1,10 @@
-.header{
+.inscription-page-container {
+    background-color: #DFF2FF;
+    height: 100%;
+}
+
+
+/* .header{
     border: 1px solid black;
     margin : 2%;
 }
@@ -18,7 +24,7 @@ form{
     width: 150px;
 }
 
-/* instruction */
+instruction
 .header+div>div{
     text-align: center;
 }
@@ -32,3 +38,4 @@ span{
     color: red;
     font-size: medium;
 }
+ */
