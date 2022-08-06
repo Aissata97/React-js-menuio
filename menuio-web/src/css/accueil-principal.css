@@ -155,7 +155,7 @@ h1 b {
 
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 650px) {
     .body-page-premier-ecran {
         display: flex;
         flex-direction: column;
@@ -195,18 +195,14 @@ h1 b {
 
     .paragraph-info {
         display: inline-block;
-        width: 100%;
         margin-left: 0%;
         font-size: 15px;
-        /* border: 2px solid black; */
     }
-
-
 
     /******************************/
 
     .premier-ecran,
     .main-page-contact {
-        max-height: 550px;
+        max-height: 700px;
     }
 }
