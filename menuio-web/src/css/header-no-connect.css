@@ -29,6 +29,10 @@
     color: black;
 }
 
+.navbar-no-connect div:last-child button a:hover {
+    color: #FFFF;
+}
+
 /** Hover Les liens dans le navbar */
 .navbar-no-connect div:last-child a:hover {
     color: black;
@@ -52,6 +56,10 @@
     padding: 10px;
     border: none;
     width: 150px;
+}
+
+.navbar-no-connect button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 

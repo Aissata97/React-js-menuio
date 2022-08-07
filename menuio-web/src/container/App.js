@@ -21,9 +21,9 @@ const App = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path='/' component={AccueilPrincipal} />
-            <Route exact path='/inscription' component={InscriptionFormContainer} />
-            <Route exact path='/inscription/:id' component={InscriptionRestoFormContainer} />
-            <Route exact path='/connexion' component={ConnexionContainer} />
+            <Route path='/inscription' component={InscriptionFormContainer} />
+            <Route path='/inscription/:id' component={InscriptionRestoFormContainer} />
+            <Route path='/connexion' component={ConnexionContainer} />
             <Route path='/acceuil' component={Acceuil} />
             <Route path='/qrcode' component={QrCodePage} />
             <Route path='/profil/:nom' component={ProfilUserContainer} />

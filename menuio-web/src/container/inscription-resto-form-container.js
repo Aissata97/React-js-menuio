@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import InputComponent from '../component/input-component'
 import HeaderNoConnect from '../component/header-no-connect'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/connexion-inscription.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-toastify/dist/ReactToastify.css'
 const baseUrl = 'https://menuio.herokuapp.com'
 //const proxyurl = 'https://cors-anywhere.herokuapp.com/'
@@ -146,12 +146,11 @@ class InscriptionRestoFormContainer extends Component {
                             onChange={this.handleChange}
                         />
                         <p>{this.state.errorData}</p>
-                        
+
                         <div className='text-center'>
                             <input type='submit' value='Envoyer' className='btn-inscription'/>
                         </div>
-                        
-                        
+                            
 
                     </form>
                 </div>

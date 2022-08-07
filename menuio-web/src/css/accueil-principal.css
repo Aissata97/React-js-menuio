@@ -66,6 +66,8 @@ html {
     color: #FFFF;
 }
 
+
+
 /* Les 2 boutons de l'ecran 1 */
 .premier-ecran-gauche button {
     border-radius: 30px;
@@ -77,6 +79,14 @@ html {
     width: 40%;
     margin-right: 10px;
 }
+
+/******** Hover des boutons ***********/
+.premier-ecran-gauche button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/***************************************/
+
 
 .premier-ecran-gauche button a {
     text-decoration: none;

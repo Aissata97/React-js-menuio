@@ -1,4 +1,5 @@
 .connexion-page-container,
+.inscription-page-container,
 html {
     background-color: #DFF2FF;
     height: 100%;
@@ -42,6 +43,11 @@ html {
     margin-right: 2%;
     background-color: aqua;
     color: #FFFF;
+}
+
+.btn-connexion:hover,
+.btn-inscription:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .connexion-container h1,
