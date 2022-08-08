@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import HeaderAppContainer from '../container/header-app-container'
 import InputComponent from '../component/input-component'
+import '../css/profil.css'
 const baseUrl = 'https://menuio.herokuapp.com'
 //const proxyurl = 'https://cors-anywhere.herokuapp.com/'
 const proxyurl = ''
@@ -27,7 +28,7 @@ class ProfilUserContainer extends Component {
 
     render () {
         return (
-            <div>
+            <div className='profil-page-container'>
                 <HeaderAppContainer />
 
                 <div className='text-center'>
@@ -35,7 +36,6 @@ class ProfilUserContainer extends Component {
                 </div>
 
                 <form>
-
                     <div className='form-row'>
                         <InputComponent
                             text='Nom'
