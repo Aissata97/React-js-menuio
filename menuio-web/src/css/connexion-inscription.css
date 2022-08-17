@@ -1,8 +1,9 @@
 .connexion-page-container,
 .inscription-page-container,
-html {
+html,
+body {
     background-color: #DFF2FF;
-    height: 100%;
+    height: 1000px;
 }
 
 .connexion-container,
