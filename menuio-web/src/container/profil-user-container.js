@@ -44,6 +44,7 @@ class ProfilUserContainer extends Component {
                             type='text'
                             value={this.state.user.nom}
                             classNameDiv='form-group col-md-6'
+                            classNameInput='form-control'
                         />
 
                         <InputComponent
@@ -53,6 +54,7 @@ class ProfilUserContainer extends Component {
                             type='text'
                             value={this.state.user.prenom}
                             classNameDiv='form-group col-md-6'
+                            classNameInput='form-control'
                         />
                     </div>
 
@@ -63,6 +65,7 @@ class ProfilUserContainer extends Component {
                         type='email'
                         value={this.state.user.email}
                         classNameDiv='form-group'
+                        classNameInput='form-control'
                     />
 
                     <InputComponent
@@ -72,6 +75,7 @@ class ProfilUserContainer extends Component {
                         type='tel'
                         value={this.state.user.telephone}
                         classNameDiv='form-group'
+                        classNameInput='form-control'
                     />
 
                     <InputComponent
@@ -81,6 +85,7 @@ class ProfilUserContainer extends Component {
                         type='text'
                         value={this.state.user.addresse}
                         classNameDiv='form-group'
+                        classNameInput='form-control'
                     />
 
                     <InputComponent
@@ -90,6 +95,7 @@ class ProfilUserContainer extends Component {
                         type='password'
                         value={this.state.user.passwords}
                         classNameDiv='form-group'
+                        classNameInput='form-control'
                     />
 
                 </form>

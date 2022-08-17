@@ -1,5 +1,8 @@
+html,
+body,
 .profil-page-container {
-    background-color: #DFF2FF;
+    background-color: #FFF;
+    height: 100%;
 }
 
 .profil-page-container form {

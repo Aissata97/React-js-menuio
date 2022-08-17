@@ -20,7 +20,7 @@ class QrCodePage extends Component {
                 <HeaderAppContainer />
 
                 <div className='text-center'>
-                    <QRCode value={'https://menuioweb.herokuapp.com/menu=' + this.state.idResto} />
+                    <QRCode value={'https://menuiobyaissata.netlify.app/menu=' + this.state.idResto} />
                 </div>
 
             </div>

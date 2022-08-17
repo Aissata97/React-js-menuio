@@ -227,7 +227,7 @@ class PersonnalisationMenu extends Component {
 
         return (
 
-            <div>
+            <div className='personnalisation-container'>
                 <HeaderAppContainer />
 
                 <div>
